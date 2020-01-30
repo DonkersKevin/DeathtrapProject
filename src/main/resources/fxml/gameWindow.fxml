@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane id="gameWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../dD.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dD.controllers.MainController">
+
+   <top>
+      <VBox prefHeight="22.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Game">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleNewGameButton" text="New game" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleSaveButton" text="Save" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleLoadButton" text="Load" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExitButton" text="Exit" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </top>
+
+   <right>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="characterPic" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="characterName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <GridPane prefHeight="60.0" prefWidth="132.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+
+               <children>
+
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/health.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/skill.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/luck.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="staminaC" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="skillC" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="luckC" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+
+               </children>
+            </GridPane>
+
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="28.0" prefWidth="202.0">
+                     <children>
+                        <Separator prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="inventoryView" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+
+   <left>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="300.0" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <HBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0">
+               <children>
+                  <ImageView fx:id="locationImagery" fitHeight="403.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+
+   <bottom>
+      <HBox prefHeight="150.0" prefWidth="571.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane minHeight="150.0" minWidth="600.0" prefHeight="200.0" prefWidth="400.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+
+               <children>
+                  <Button fx:id="buttonA" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleMoveButton" text="A" />
+                  <Button fx:id="buttonB" layoutX="10.0" layoutY="10.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleMoveButton" text="B" GridPane.rowIndex="1" />
+                  <Button fx:id="buttonC" layoutX="10.0" layoutY="10.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleMoveButton" text="C" GridPane.rowIndex="2" />
+                  <Button fx:id="buttonD" layoutX="10.0" layoutY="10.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleMoveButton" text="D" GridPane.columnIndex="2" />
+                  <Button fx:id="buttonE" layoutX="10.0" layoutY="10.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleMoveButton" text="E" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="buttonF" layoutX="10.0" layoutY="10.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleMoveButton" text="F" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Text fx:id="descrA" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="200.0" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="descrB" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="200.0" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="descrC" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="200.0" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+                     <children>
+                        <Text fx:id="descrD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="descrE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="descrF" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </StackPane>
+               </children>
+
+            </GridPane>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="150.0" prefWidth="202.0">
+                     <children>
+                        <HBox prefHeight="33.0" prefWidth="200.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="33.0" prefWidth="104.0">
+                                 <children>
+                                    <ImageView fitHeight="34.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/bag.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <HBox alignment="CENTER" prefHeight="33.0" prefWidth="99.0">
+                                 <children>
+                                    <Text fx:id="provisionC" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="eatButton" mnemonicParsing="false" onAction="#handleEatButton" text="Eat provision" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="34.0" prefWidth="200.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="34.0" prefWidth="108.0">
+                                 <children>
+                                    <ImageView fitHeight="33.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/potion.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="34.0" prefWidth="97.0">
+                                 <children>
+                                    <Text fx:id="potionC" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="103.0">
+                                 <children>
+                                    <Text fx:id="potionType" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="99.0">
+                                 <children>
+                                    <Button fx:id="drinkButton" mnemonicParsing="false" onAction="#handleDrinkButton" text="Drink Potion" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <ScrollPane hbarPolicy="ALWAYS" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="924.0" prefWidth="298.0">
+               <children>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="901.0" prefWidth="298.0" AnchorPane.bottomAnchor="-500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TextFlow id="locTextArea" prefHeight="416.0" prefWidth="295.0" textAlignment="CENTER">
+                           <children>
+                              <Text id="locText" fx:id="locationDescription" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="24.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </TextFlow>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </ScrollPane>
+   </center>
+</BorderPane>

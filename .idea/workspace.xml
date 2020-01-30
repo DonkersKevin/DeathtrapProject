@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DeathtrapDungeon:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ff17aa15-decf-4494-8490-77d323f41aa9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QQ7vCAvzBlnUDmHwn5lPNRlxon" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\UdemyWorkspace\deathtrapDungeon\src" />
+      <recent name="D:\UdemyWorkspace\deathtrapDungeon\src\main\resources\Database" />
+      <recent name="D:\UdemyWorkspace\deathtrapDungeon\src\main\resources\images" />
+      <recent name="D:\UdemyWorkspace\deathtrapDungeon\src\main\resources\fonts" />
+      <recent name="D:\UdemyWorkspace\deathtrapDungeon\src\main\resources\music" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UdemyWorkspace\deathtrapDungeon\src\main\resources\images" />
+      <recent name="D:\UdemyWorkspace\deathtrapDungeon\src\main\resources\fxml" />
+      <recent name="D:\UdemyWorkspace\deathtrapDungeon\src\main\resources" />
+      <recent name="D:\UdemyWorkspace\deathtrapDungeon\src\main\java\dD\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DdAppLauncher">
+    <configuration name="DdApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dD.main.DdApp" />
+      <module name="DeathtrapDungeon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dD.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DdAppLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dD.main.DdAppLauncher" />
+      <module name="DeathtrapDungeon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dD.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DdApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dD.main.DdApp" />
+      <module name="DeathtrapDungeon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dD.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dD.main.Testest" />
+      <module name="DeathtrapDungeon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dD.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeathtrapDungeon.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/DeathtrapDungeon_jar/DeathtrapDungeon.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DdAppLauncher" />
+        <item itemvalue="JAR Application.DeathtrapDungeon.jar" />
+        <item itemvalue="Application.Testest" />
+        <item itemvalue="Application.DdApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff17aa15-decf-4494-8490-77d323f41aa9" name="Default Changelist" comment="" />
+      <created>1567691194254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567691194254</updated>
+      <workItem from="1567691197964" duration="2721000" />
+      <workItem from="1567936948743" duration="16760000" />
+      <workItem from="1568037177302" duration="25765000" />
+      <workItem from="1568107099671" duration="1005000" />
+      <workItem from="1569930226900" duration="7723000" />
+      <workItem from="1569942690540" duration="2183000" />
+      <workItem from="1570364014596" duration="5888000" />
+      <workItem from="1570618052305" duration="605000" />
+      <workItem from="1570703154674" duration="10202000" />
+      <workItem from="1570721296009" duration="629000" />
+      <workItem from="1570742154024" duration="1413000" />
+      <workItem from="1571060187202" duration="5643000" />
+      <workItem from="1571067899257" duration="59000" />
+      <workItem from="1571138916095" duration="3978000" />
+      <workItem from="1571826689951" duration="728000" />
+      <workItem from="1571911557235" duration="1841000" />
+      <workItem from="1571935478169" duration="708000" />
+      <workItem from="1571998886975" duration="3603000" />
+      <workItem from="1572167648394" duration="25452000" />
+      <workItem from="1572267619688" duration="15246000" />
+      <workItem from="1573228524931" duration="5411000" />
+      <workItem from="1573562232127" duration="15512000" />
+      <workItem from="1573739560998" duration="2800000" />
+      <workItem from="1574081369722" duration="10592000" />
+      <workItem from="1574110143936" duration="8105000" />
+      <workItem from="1574259764389" duration="6223000" />
+      <workItem from="1574284907535" duration="3786000" />
+      <workItem from="1574288856319" duration="20061000" />
+      <workItem from="1580380582417" duration="343000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2305" y="361" key="#DdAppLauncher" timestamp="1580380653677">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2305" y="361" key="#DdAppLauncher/0.0.3440.1400@0.0.3440.1400" timestamp="1580380653677" />
+    <state x="1416" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1580380583335">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1416" y="525" key="com.intellij.ide.util.TipDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1580380583335" />
+  </component>
+</project>

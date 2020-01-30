@@ -1,9 +1,12 @@
-"# DeathtrapProject" 
+"# DeathtrapProject"
+
+Summary
+-------
 
 A digital version of the adventure book writtem by Ian Livingstone and illustrated by Iain McCaig.
 
 Done
-====
+----
 * Title screen with 1998 ps1 deathtrap dungeon artwork.
 * Character select screen.
 * Main interface and action buttons, movement through rooms.
@@ -15,7 +18,7 @@ Done
 
 
 To do
-=====
+-----
 * Debug opening screen music theme.
 * Custom character creation and selection.
 * Debug drink/eat buttons.

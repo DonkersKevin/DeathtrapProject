@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="gameWindow" stylesheets="@../dD.css" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dD.controllers.CharSelectController">
+   <children>
+      <VBox layoutX="14.0" layoutY="16.0" prefHeight="569.0" prefWidth="773.0">
+         <children>
+
+            <HBox id="charButtonBackground" prefHeight="280.0" prefWidth="773.0">
+               <children>
+                  <BorderPane prefHeight="156.0" prefWidth="773.0" HBox.hgrow="ALWAYS">
+                     <left>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../images/Arran.png" />
+                              </image>
+                           </ImageView>
+                           </children>
+                        </HBox>
+                     </left>
+                     <right>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../images/Ariel.png" />
+                              </image>
+                           </ImageView>
+                           </children>
+                        </HBox>
+                     </right>
+                     <center>
+                        <HBox alignment="CENTER" prefHeight="184.0" prefWidth="373.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../images/Baldar.jpg" />
+                              </image>
+                           </ImageView>
+                           </children>
+                        </HBox>
+                     </center>
+                  </BorderPane>
+               </children>
+            </HBox>
+
+            <HBox prefHeight="200.0" prefWidth="773.0">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <left>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <TextFlow lineSpacing="2.0" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Arran's approach in battle is simple and direct - to charge forwards, huge shoulders whirling his sword maniacally about his head, chopping left and right with such force and speed as to quickly put any enemy off getting too close. And should you ever manage to sneak a blow in under this onslaught, Arran's impressive physique will normally just brush it off as if it were a scratch." />
+                                             </children>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <padding>
+                                                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                             </padding>
+                                          </TextFlow>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets bottom="10.0" right="10.0" top="10.0" />
+                                       </opaqueInsets>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets bottom="10.0" left="10.0" right="100.0" top="10.0" />
+                           </opaqueInsets>
+                        </HBox>
+                     </left>
+                     <right>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <TextFlow prefHeight="356.0" prefWidth="185.0" textAlignment="CENTER" AnchorPane.rightAnchor="15.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ariel is the most feared woman in all of Allansia. Even murderous highwaymen will deliberately evade her as she travels, and in the cities, battle-scarred mercenaries avoid this slightly built, intense looking adventurer. Soldier and bamdit alike, they are all terrified of the strange connection that binds Ariel to the tides of fortune. It is not so much that good luck befalls her, it is the fact that anybody who crosses her always ends up suffering the gravest misfortune. Tales abound of pickpockets who have had their hands severed in bizarre accidents after trying to rob from her, of opponents in combat who have stumbled and fallen on their own swords. Little is known of her background, but there are whispers - perhaps not wholly unfounded - that some long-lost dark magic fills her soul." textAlignment="CENTER" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                             </padding>
+                                          </TextFlow>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets bottom="10.0" right="10.0" top="10.0" />
+                                       </opaqueInsets>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </HBox>
+                     </right>
+                     <center>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="373.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <TextFlow layoutY="-2.0" prefHeight="485.0" prefWidth="187.0" textAlignment="CENTER" AnchorPane.rightAnchor="15.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Baldar is a supreme master of all types of effensive weapons, from throwing knives to longbows, there is nothing that does not put the fear of the gods into his foes when it is in his hands. It is his swordsmanship though that is the most stunning attribute. The son of a blacksmith, he spent his infancy surrounded bu blades of all designs. Ever since he was just a boy he has repeatedly defeated opponents of greater age and experience in duels. He is even said to be able to chop a crossbow bolt from the air. Dressed in ornate flowing robes that allow him tro move with ease, he is as fashionable as he is deadly." textAlignment="CENTER" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                             </padding>
+                                          </TextFlow>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets bottom="10.0" right="10.0" top="10.0" />
+                                       </opaqueInsets>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </HBox>
+                     </center>
+                  </BorderPane>
+               </children>
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+            </HBox>
+
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <left>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleCharSelectButton" text="Aran Gottspeed" />
+                           </children>
+                        </HBox>
+                     </left>
+                     <right>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleCharSelectButton" text="Ariel Elfhart" />
+                           </children>
+                        </HBox>
+                     </right>
+                     <center>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleCharSelectButton" text="Baldar Liefsson" />
+                           </children>
+                        </HBox>
+                     </center>
+                  </BorderPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="773.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Create custom character." />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

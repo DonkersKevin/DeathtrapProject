@@ -1,0 +1,53 @@
+/*.root{
+    -fx-background-color: #343231;
+    -fx-font-size: 15pt;
+}
+
+.button{
+    -fx-background-color: linear-gradient(#dc9656, #ab4642);
+}*/
+
+.label{
+
+}
+
+#titleScreen{
+    -fx-background-image: url('images/titleImage.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+
+}
+
+#startButton{
+    -fx-background-image: url('images/startButton.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+    -fx-background-radius: 12;
+}
+
+#gameWindow{
+    -fx-background-image: url('images/marble-background-800x600.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+#locTextArea{
+    -fx-background-image: url('images/parchmenTile.jpg');
+}
+
+#locText{
+    -fx-font-size: 30px;
+    -fx-font-family: "Enchanted Land";
+}
+
+#charSelectWindow{
+    -fx-background-image: url('images/marble-background-800x600.jpg'), url('images/redRibbon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+#charButtonBackground{
+    -fx-background-image: url('images/redRibbon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
