@@ -2,6 +2,7 @@ package dD.model;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -279,10 +280,5 @@ public class PlayerCharacter {
         System.out.println(this.inventory);
     }
 
-
-/*    public void newInventory(){
-        Inventory newInventory = new Inventory();
-        newInventory.addItem();
-    }*/
 
 }

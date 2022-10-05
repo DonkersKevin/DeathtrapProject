@@ -20,22 +20,22 @@ public class DeathController {
     @FXML
     private Text deathNote;
 
-    public void initialize(){
+    public void initialize() {
         deathNote.setText(deathMessage);
     }
 
 
-    public void handleDeathExitButton(ActionEvent event){
+    public void handleDeathExitButton(ActionEvent event) {
         Button bPressed = (Button) event.getSource();
-        Stage stage = (Stage)bPressed.getScene().getWindow();
+        Stage stage = (Stage) bPressed.getScene().getWindow();
         stage.close();
         Platform.exit();
     }
 
-    public void handleRestartButton(ActionEvent event){
+    public void handleRestartButton(ActionEvent event) {
         try {
             Button bPressed = (Button) event.getSource();
-            Stage stageOld = (Stage)bPressed.getScene().getWindow();
+            Stage stageOld = (Stage) bPressed.getScene().getWindow();
             stageOld.close();
 
             Stage stage = new Stage();

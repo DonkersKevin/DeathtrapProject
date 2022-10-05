@@ -6,12 +6,11 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 
-
 public class DeathHandler {
 
     private DeathBox deathBox = new DeathBox();
 
-    public void death(ActionEvent event){
+    public void death(ActionEvent event) {
         Button bPressed = (Button) event.getSource();
         Stage stage = (Stage) bPressed.getScene().getWindow();
         stage.close();
@@ -19,7 +18,7 @@ public class DeathHandler {
         deathBox.displayDeathBox();
     }
 
-    public void captured(){
+    public void captured() {
         deathBox.displayDeathBox();
     }
 }

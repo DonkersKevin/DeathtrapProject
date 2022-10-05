@@ -85,14 +85,17 @@ public class FightController {
         playerPots.setText(Integer.toString(playerCharacter.getPotionUses()));
         potionChoice.setText(playerCharacter.getPotionChoice().toLowerCase());
 
-        switch (playerCharacter.getName()){
-            case "Aran Gottspeed" : playerPic.setImage(new Image("images/Arran.png"));
+        switch (playerCharacter.getName()) {
+            case "Aran Gottspeed":
+                playerPic.setImage(new Image("images/Arran.png"));
                 break;
 
-            case "Baldar Liefsson" : playerPic.setImage(new Image("images/Baldar.jpg"));
+            case "Baldar Liefsson":
+                playerPic.setImage(new Image("images/Baldar.jpg"));
                 break;
 
-            case "Ariel Elfhart" : playerPic.setImage(new Image("images/Ariel.png"));
+            case "Ariel Elfhart":
+                playerPic.setImage(new Image("images/Ariel.png"));
                 break;
         }
 
@@ -118,26 +121,26 @@ public class FightController {
         });
     }
 
-    public void handleStrikeButton(javafx.event.ActionEvent event){
+    public void handleStrikeButton(javafx.event.ActionEvent event) {
         resolveStrike(event);
     }
 
-    public void handleFleeButton(javafx.event.ActionEvent event){
+    public void handleFleeButton(javafx.event.ActionEvent event) {
         System.out.println("Fleeing!");
 
     }
 
-    public void handleDrinkButton(javafx.event.ActionEvent event){
+    public void handleDrinkButton(javafx.event.ActionEvent event) {
         System.out.println("Drinking a potion.");
-        if(playerCharacter.getPotionUses()>0){
-            if(playerCharacter.drinkPotion(playerCharacter.getPotionChoice())){
-                playerCharacter.setPotionUses(playerCharacter.getPotionUses()-1);
-            }else{
+        if (playerCharacter.getPotionUses() > 0) {
+            if (playerCharacter.drinkPotion(playerCharacter.getPotionChoice())) {
+                playerCharacter.setPotionUses(playerCharacter.getPotionUses() - 1);
+            } else {
                 combatLogString.append(System.getProperty("line.separator"));
                 combatLogString.append("You don't need to use a potion!");
                 combatLog.setText(combatLogString.toString());
             }
-        }else{
+        } else {
             combatLogString.append(System.getProperty("line.separator"));
             combatLogString.append("You have no more potion uses!");
             combatLog.setText(combatLogString.toString());
@@ -145,32 +148,32 @@ public class FightController {
 
     }
 
-    private void resolveStrike(javafx.event.ActionEvent event){
+    private void resolveStrike(javafx.event.ActionEvent event) {
         int enemyRoll = die.rollTwoDice() + monsterToFight.getSkill();
         int playerRoll = die.rollTwoDice() + playerCharacter.getSkill();
 
-        if(enemyRoll==playerRoll){
+        if (enemyRoll == playerRoll) {
             combatLogString.append(System.getProperty("line.separator"));
             combatLogString.append("Your blows glance.");
             combatLog.setText(combatLogString.toString());
 
-        }else if(enemyRoll>playerRoll){
+        } else if (enemyRoll > playerRoll) {
             combatLogString.append(System.getProperty("line.separator"));
             combatLogString.append("The enemy hits you!");
             combatLog.setText(combatLogString.toString());
 
-            playerCharacter.setStamina(playerCharacter.getStamina()-2);
-            if(playerCharacter.getStamina()<=0){
+            playerCharacter.setStamina(playerCharacter.getStamina() - 2);
+            if (playerCharacter.getStamina() <= 0) {
                 playerDead(event);
             }
 
-        }else{
+        } else {
             combatLogString.append(System.getProperty("line.separator"));
             combatLogString.append("You hit the enemy!");
             combatLog.setText(combatLogString.toString());
 
-            monsterToFight.setStamina(monsterToFight.getStamina()-2);
-            if(monsterToFight.getStamina()<=0){
+            monsterToFight.setStamina(monsterToFight.getStamina() - 2);
+            if (monsterToFight.getStamina() <= 0) {
                 monsterDead(event);
             }
         }
@@ -178,15 +181,15 @@ public class FightController {
     }
 
 
-    private void playerDead(javafx.event.ActionEvent event){
+    private void playerDead(javafx.event.ActionEvent event) {
         System.out.println("Player has died");
         Button buttonPressed = (Button) event.getSource();
         Stage stage = (Stage) buttonPressed.getScene().getWindow();
         stage.close();
-/*        ConfirmBox.display("You have lost", "Restart?" );*/
+        /*        ConfirmBox.display("You have lost", "Restart?" );*/
     }
 
-    private void monsterDead(javafx.event.ActionEvent event){
+    private void monsterDead(javafx.event.ActionEvent event) {
         System.out.println("Victory!");
         Button buttonPressed = (Button) event.getSource();
         Stage stage = (Stage) buttonPressed.getScene().getWindow();

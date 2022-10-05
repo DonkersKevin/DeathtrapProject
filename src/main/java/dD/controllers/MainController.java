@@ -18,7 +18,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
 import java.util.List;
+
 import javafx.scene.image.*;
 
 import static dD.controllers.CharSelectController.selectedCharacter;
@@ -39,7 +41,6 @@ public class MainController {
     public static EventPool eventPool = new EventPool();
     public static GameEventHandler gameEventHandler = new GameEventHandler();
     public static SaveLoadService saveLoadService;
-
 
 
     //location
@@ -76,7 +77,6 @@ public class MainController {
     private ImageView locationImagery;
 
 
-
     @FXML
     private Button buttonA;
     @FXML
@@ -109,58 +109,58 @@ public class MainController {
     private Text descrF;
 
 
-    public void restartGame(javafx.event.ActionEvent event){
-        Button b = (Button)(event.getSource());
+    public void restartGame(javafx.event.ActionEvent event) {
+        Button b = (Button) (event.getSource());
         Stage stage = (Stage) b.getScene().getWindow();
         stage.close();
 
 
         System.out.println("restart");
         System.out.println(playerCharacter.getName());
-/*        selectCharacter(playerCharacter.getName());*/
+        /*        selectCharacter(playerCharacter.getName());*/
         currentLocation = loc.getLocation(1);
         System.out.println(currentLocation.getLocationID());
         //Nullpointer
-/*        locationDescription.setText(currentLocation.getDescription());*/
+        /*        locationDescription.setText(currentLocation.getDescription());*/
     }
 
 
-    public void initialize(){
-    loc = new LocationsPool();
-    currentLocation = loc.getLocation(1);
+    public void initialize() {
+        loc = new LocationsPool();
+        currentLocation = loc.getLocation(1);
 
 
-    eventPool = new EventPool();
-    saveLoadService = new SaveLoadService();
-    gameEventHandler = new GameEventHandler();
+        eventPool = new EventPool();
+        saveLoadService = new SaveLoadService();
+        gameEventHandler = new GameEventHandler();
 
-    descrA.setText("-");
-    descrB.setText("-");
-    descrC.setText("-");
-    descrD.setText("-");
-    descrE.setText("-");
-    descrF.setText("-");
+        descrA.setText("-");
+        descrB.setText("-");
+        descrC.setText("-");
+        descrD.setText("-");
+        descrE.setText("-");
+        descrF.setText("-");
 
-    locationImagery.setImage(new Image("images/startImage.bmp"));
+        locationImagery.setImage(new Image("images/startImage.bmp"));
 
-    deathMessage = "-";
+        deathMessage = "-";
 
-    buttonA.setDisable(true);
-    buttonB.setDisable(true);
-    buttonC.setDisable(true);
-    buttonD.setDisable(true);
-    buttonE.setDisable(true);
-    buttonF.setDisable(true);
+        buttonA.setDisable(true);
+        buttonB.setDisable(true);
+        buttonC.setDisable(true);
+        buttonD.setDisable(true);
+        buttonE.setDisable(true);
+        buttonF.setDisable(true);
 
-    eatButton.setDisable(true);
-    drinkButton.setDisable(true);
+        eatButton.setDisable(true);
+        drinkButton.setDisable(true);
 
     }
 
 
     // Move Button handling
     @FXML
-    public void handleNewGameButton(){
+    public void handleNewGameButton() {
         //Display character selection box
         CharacterSelectBox.displayCharSelect();
 
@@ -175,15 +175,18 @@ public class MainController {
 
 
         System.out.println(playerCharacter.getName());
-        switch (playerCharacter.getName()){
-            case "Aran Gottspeed" : characterPic.setImage(new Image("images/Arran.png"));
-            break;
+        switch (playerCharacter.getName()) {
+            case "Aran Gottspeed":
+                characterPic.setImage(new Image("images/Arran.png"));
+                break;
 
-            case "Baldar Liefsson" : characterPic.setImage(new Image("images/Baldar.jpg"));
-            break;
+            case "Baldar Liefsson":
+                characterPic.setImage(new Image("images/Baldar.jpg"));
+                break;
 
-            case "Ariel Elfhart" : characterPic.setImage(new Image("images/Ariel.png"));
-            break;
+            case "Ariel Elfhart":
+                characterPic.setImage(new Image("images/Ariel.png"));
+                break;
         }
 
         //Stats
@@ -200,15 +203,15 @@ public class MainController {
         inventoryView.setItems((ObservableList) playerCharacter.getInventory().getInventoryList());
 
         //listeners
-        playerCharacter.staminaProperty().addListener((v, oldValue, newValue) ->{
+        playerCharacter.staminaProperty().addListener((v, oldValue, newValue) -> {
             staminaC.setText(newValue.toString());
-            });
+        });
 
-        playerCharacter.skillProperty().addListener((v, oldValue, newValue) ->{
+        playerCharacter.skillProperty().addListener((v, oldValue, newValue) -> {
             skillC.setText(newValue.toString());
         });
 
-        playerCharacter.luckProperty().addListener((v, oldValue, newValue) ->{
+        playerCharacter.luckProperty().addListener((v, oldValue, newValue) -> {
             luckC.setText(newValue.toString());
         });
 
@@ -229,13 +232,13 @@ public class MainController {
     }
 
     @FXML
-    public void handleSaveButton(){
+    public void handleSaveButton() {
         System.out.println("Saving...");
-        saveLoadService.save(playerCharacter,currentLocation);
+        saveLoadService.save(playerCharacter, currentLocation);
     }
 
     @FXML
-    public void handleLoadButton(){
+    public void handleLoadButton() {
         System.out.println("Loading...");
         SaveableCharacter sav = saveLoadService.load("EnterSaveStringHere");
         currentLocation = loc.getLocation(sav.getCurrentLocationID());
@@ -250,24 +253,24 @@ public class MainController {
     }
 
     @FXML
-    public void handleExitButton(){
+    public void handleExitButton() {
         closeProgram();
     }
 
     @FXML
-    public void handleDrinkButton(){
+    public void handleDrinkButton() {
         System.out.println("Drinking");
     }
 
     @FXML
-    public void handleEatButton(){
+    public void handleEatButton() {
         System.out.println("Eating");
     }
 
 
     //Movement buttons
     @FXML
-    public void handleMoveButton(ActionEvent event){
+    public void handleMoveButton(ActionEvent event) {
         //Gets button text to query locations database for next location
         Button buttonPressed = (Button) event.getSource();
         System.out.println(buttonPressed.getText() + " Pressed.");
@@ -278,9 +281,8 @@ public class MainController {
 
         //Parse eventSequence string
         gameEventHandler.parseEventSequence(currentLocation.getEventSequence(), playerCharacter, event);
-/*        if(testFailed){
 
-        }*/
+        //  if(testFailed){}
 
         //Updates buttons
         updateButtons();
@@ -288,58 +290,58 @@ public class MainController {
     }
 
 
-    //Manual update of buttons, deactivates unnused buttons, reactivates usable buttons
-    private void updateButtons(){
+    //Manual update of buttons, deactivates unused buttons, reactivates usable buttons
+    private void updateButtons() {
         String descr = currentLocation.getExitDescription().get("a");
-        if (descr != null){
+        if (descr != null) {
             descrA.setText(descr);
             buttonA.setDisable(false);
-        }else{
+        } else {
             descrA.setText("-");
             buttonA.setDisable(true);
         }
 
         descr = currentLocation.getExitDescription().get("b");
-        if (descr != null){
+        if (descr != null) {
             descrB.setText(descr);
             buttonB.setDisable(false);
-        }else{
+        } else {
             descrB.setText("-");
             buttonB.setDisable(true);
         }
 
         descr = currentLocation.getExitDescription().get("c");
-        if (descr != null){
+        if (descr != null) {
             descrC.setText(descr);
             buttonC.setDisable(false);
-        }else{
+        } else {
             descrC.setText("-");
             buttonC.setDisable(true);
         }
 
         descr = currentLocation.getExitDescription().get("d");
-        if (descr != null){
+        if (descr != null) {
             descrD.setText(descr);
             buttonD.setDisable(false);
-        }else{
+        } else {
             descrD.setText("-");
             buttonD.setDisable(true);
         }
 
         descr = currentLocation.getExitDescription().get("e");
-        if (descr != null){
+        if (descr != null) {
             descrE.setText(descr);
             buttonE.setDisable(false);
-        }else{
+        } else {
             descrE.setText("-");
             buttonE.setDisable(true);
         }
 
         descr = currentLocation.getExitDescription().get("f");
-        if (descr != null){
+        if (descr != null) {
             descrF.setText(descr);
             buttonF.setDisable(false);
-        }else{
+        } else {
             descrF.setText("-");
             buttonF.setDisable(true);
         }
@@ -349,11 +351,11 @@ public class MainController {
 
 
     //Code to run before close
-    private void closeProgram(){
+    private void closeProgram() {
         Boolean answer = ConfirmBox.display("Close Program.", "Are you sure you want to exit?, Progress will be saved");
-        if(answer){
+        if (answer) {
             System.out.println("Progress Saved");
-            saveLoadService.save(playerCharacter,currentLocation);
+            saveLoadService.save(playerCharacter, currentLocation);
             Platform.exit();
         }
     }

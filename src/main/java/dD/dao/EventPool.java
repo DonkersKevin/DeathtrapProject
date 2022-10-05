@@ -11,9 +11,9 @@ public class EventPool {
     public static final String COLUMN_EVENT_STRING = "eventstring";
 
 
-    public String getEvent(int index){
-        try(Connection con = DriverManager.getConnection(CONN_STRING);
-            Statement stat = con.createStatement()) {
+    public String getEvent(int index) {
+        try (Connection con = DriverManager.getConnection(CONN_STRING);
+             Statement stat = con.createStatement()) {
 
 
             ResultSet set = stat.executeQuery("SELECT " + COLUMN_EVENT_STRING + " FROM " + TABLE_EVENTS + " WHERE id = " + index);
@@ -21,7 +21,7 @@ public class EventPool {
             String eventString = set.getString("eventstring");
             return eventString;
 
-        }catch (SQLException e){
+        } catch (SQLException e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
         }

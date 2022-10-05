@@ -48,20 +48,20 @@ public class Location implements Serializable {
         this.eventSequence = eventSequence;
     }
 
-    public void addExit(String key, int value){
-        exits.put(key,value);
+    public void addExit(String key, int value) {
+        exits.put(key, value);
     }
 
-    public void addExitDescription(String key, String value){
-        exitDescription.put(key,value);
+    public void addExitDescription(String key, String value) {
+        exitDescription.put(key, value);
     }
 
     public Map<String, Integer> getExits() {
         return new HashMap<String, Integer>(exits);
     }
 
-    public Map<String, String> getExitDescription(){
-        if(exitDescription!=null){
+    public Map<String, String> getExitDescription() {
+        if (exitDescription != null) {
             return new HashMap<String, String>(exitDescription);
         }
         return null;

@@ -19,9 +19,9 @@ public class EventParser {
         diceTestHandler = new DiceTestHandler();
     }
 
-    public void parseGameEvents(String gameSequence, PlayerCharacter p, ActionEvent event){
+    public void parseGameEvents(String gameSequence, PlayerCharacter p, ActionEvent event) {
 
-        String [] action = gameSequence.split(" ");
+        String[] action = gameSequence.split(" ");
 
 
         switch (action[0]) {
@@ -31,81 +31,81 @@ public class EventParser {
                 deathHandler.death(event);
                 break;
 
-            case "TYL" :
+            case "TYL":
                 System.out.println("Testing luck");
                 System.out.println(diceTestHandler.testYourLuck(playerCharacter.getLuck()));
                 diceTestHandler.testYourLuck(playerCharacter.getLuck());
                 break;
 
-            case "TYS" :
+            case "TYS":
                 System.out.println("Testing skill");
                 System.out.println(diceTestHandler.testYourSkill(playerCharacter.getSkill()));
                 diceTestHandler.testYourSkill(playerCharacter.getSkill());
                 break;
 
-            case "TYLS" :
+            case "TYLS":
                 System.out.println("Testing luck and skill");
                 diceTestHandler.testYourStamAndSkill(playerCharacter.getStamina(), playerCharacter.getSkill());
                 break;
 
-            case "TYROLL8" :
+            case "TYROLL8":
                 System.out.println("Test your roll / 8");
                 diceTestHandler.testYourRoll8();
                 break;
 
-            case "TYROLLR" :
+            case "TYROLLR":
                 System.out.println("Test your roll, ranging 1-2/3-4/5-6");
                 diceTestHandler.testYourRollRange();
                 break;
 
-            case "CAPTURED" :
+            case "CAPTURED":
                 System.out.println("Captured");
                 deathHandler.captured();
                 break;
 
-            case "FIGHT" :
+            case "FIGHT":
                 System.out.println("Fight");
                 fightHandler.pickFight(action[1], p);
                 break;
 
-            case "STAT" :
+            case "STAT":
                 System.out.println("Stat change imminent");
                 statChangeHandler.parseStatChange(action);
                 break;
 
-            case "ADD" :
+            case "ADD":
                 System.out.println("Found something");
                 playerCharacter.addToInventory(action[1]);
                 break;
 
-            case "LOSE" :
+            case "LOSE":
                 System.out.println("Lost something");
                 playerCharacter.removeFromInventory(action[1]);
                 break;
 
-            case "CHECK" :
+            case "CHECK":
                 System.out.println("Checking inventory");
                 checkInventory(action[1]);
                 break;
 
-            case "CHECKEVENT" :
+            case "CHECKEVENT":
                 System.out.println("Checking event list");
                 playerCharacter.checkEventList(action[1]);
                 break;
 
-            case "ADDEVENT" :
+            case "ADDEVENT":
                 System.out.println("Adding event to list");
                 playerCharacter.addToEventList(action[1]);
                 break;
 
-            case "EAT" :
+            case "EAT":
                 System.out.println("Om nom nom nom");
                 playerCharacter.eat();
                 break;
         }
     }
 
-    public boolean checkInventory(String item){
+    public boolean checkInventory(String item) {
         return playerCharacter.checkInventory(item);
     }
 }

@@ -11,7 +11,6 @@ public class Monster {
     private IntegerProperty stamina;
 
 
-
     public String getName() {
         return name;
     }

@@ -20,7 +20,7 @@ public class Inventory implements Serializable {
         this.inventoryList = FXCollections.observableArrayList();
     }
 
-    public Inventory (SaveableInventory inv){
+    public Inventory(SaveableInventory inv) {
         this.inventoryList = FXCollections.observableArrayList();
         inventoryList.addAll(inv.getInventoryList());
     }
@@ -29,18 +29,18 @@ public class Inventory implements Serializable {
         return inventoryList;
     }
 
-    public void addItem(String item){
+    public void addItem(String item) {
         inventoryList.add(item);
     }
 
-    public void removeItem(String item){
+    public void removeItem(String item) {
         inventoryList.remove(item);
     }
 
-    public boolean checkInventoryForItem(String item){
-        if(inventoryList.contains(item)){
+    public boolean checkInventoryForItem(String item) {
+        if (inventoryList.contains(item)) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

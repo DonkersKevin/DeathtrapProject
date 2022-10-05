@@ -5,8 +5,40 @@
       <artifact name="DeathtrapDungeon:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff17aa15-decf-4494-8490-77d323f41aa9" name="Default Changelist" comment="" />
+    <list default="true" id="ff17aa15-decf-4494-8490-77d323f41aa9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeathtrapDungeon.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sav/Save1.sav" beforeDir="false" afterPath="$PROJECT_DIR$/sav/Save1.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/controllers/CharSelectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/controllers/CharSelectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/controllers/DeathController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/controllers/DeathController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/controllers/FightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/controllers/FightController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/dao/EventPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/dao/EventPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/dao/LocationsPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/dao/LocationsPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/DeathHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/DeathHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/DiceTestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/DiceTestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/EventParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/EventParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/FightHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/FightHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/StatChangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/gamehandlers/StatChangeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/main/DdApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/main/DdApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/model/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/model/Die.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/model/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/model/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/model/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/model/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/model/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/model/PlayerCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/popboxes/CharacterSelectBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/popboxes/CharacterSelectBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/popboxes/ConfirmBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/popboxes/ConfirmBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/popboxes/DeathBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/popboxes/DeathBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/popboxes/FightBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/popboxes/FightBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dD/util/SaveLoadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dD/util/SaveLoadService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,37 +54,34 @@
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1QQ7vCAvzBlnUDmHwn5lPNRlxon" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\UdemyWorkspace\deathtrapDungeon\src" />
@@ -134,6 +163,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -173,20 +203,22 @@
       <workItem from="1574284907535" duration="3786000" />
       <workItem from="1574288856319" duration="20061000" />
       <workItem from="1580380582417" duration="343000" />
+      <workItem from="1664970296756" duration="4439000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="2305" y="361" key="#DdAppLauncher" timestamp="1580380653677">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="2305" y="361" key="#DdAppLauncher/0.0.3440.1400@0.0.3440.1400" timestamp="1580380653677" />
-    <state x="1416" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1580380583335">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="1416" y="525" key="com.intellij.ide.util.TipDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1580380583335" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
